@@ -3,25 +3,77 @@
     {
       "id": "full-001",
       "category": "full",
-      "title": "tylko testuje",
-      "places": ["Uluwatu Temple", "Kecak Dance", "Padang Padang Beach"],
-      "image": "https://picsum.photos/seed/uluwatu/1200/675",
-      "mapsUrl": "https://maps.app.goo.gl/qz4Zg1gB3DfvDuqs9",
+      "title": "Uluwatu + Kecak Dance",
+      "places": [
+        "Uluwatu Temple",
+        "Kecak Dance",
+        "można opcjonalnie dodać Padang Padang Beach"
+      ],
+      "image": "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/11/f9/fe/57.jpg",
+      "maps": [
+        {
+          "label": "Uluwatu Temple",
+          "url": "https://www.google.com/maps/search/?api=1&query=Uluwatu+Temple"
+        },
+        {
+          "label": "Kecak Dance (Uluwatu)",
+          "url": "https://www.google.com/maps/search/?api=1&query=Kecak+Dance+Uluwatu"
+        },
+        {
+          "label": "Padang Padang Beach",
+          "url": "https://www.google.com/maps/search/?api=1&query=Padang+Padang+Beach"
+        }
+      ],
       "youtube": [
-        { "label": "Kecak Dance", "url": "https://www.youtube.com/watch?v=2hJEAySptME" }
+        {
+          "label": "Kecak Dance",
+          "url": "https://www.youtube.com/results?search_query=Kecak+Dance+Uluwatu"
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://bali.com/wp-content/uploads/2020/08/DSC0717-scaled.jpg",
+          "caption": "Uluwatu – klif"
+        },
+        {
+          "url": "https://res.klook.com/image/upload/w_750,h_469,c_fill,q_85/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/njdfhnt3zpgq48edz4zm.jpg",
+          "caption": "Kecak Dance"
+        },
+        {
+          "url": "https://cdn.sanity.io/images/nxpteyfv/goguides/c37c2b2c2ea67bba23c551f9f5e28ce5884799fd-1600x1066.jpg",
+          "caption": "Padang Padang Beach"
+        }
       ]
     },
     {
       "id": "short-001",
       "category": "short",
       "title": "Monkey Forest + Ubud spacer",
-      "places": ["Sacred Monkey Forest Sanctuary", "Ubud Center"],
+      "places": [
+        "Sacred Monkey Forest Sanctuary",
+        "Ubud Center"
+      ],
       "image": "https://picsum.photos/seed/ubud/1200/675",
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Sacred+Monkey+Forest+Sanctuary",
+      "maps": [
+        {
+          "label": "Sacred Monkey Forest Sanctuary",
+          "url": "https://www.google.com/maps/search/?api=1&query=Sacred+Monkey+Forest+Sanctuary"
+        },
+        {
+          "label": "Ubud Center",
+          "url": "https://www.google.com/maps/search/?api=1&query=Ubud+Center"
+        }
+      ],
       "youtube": [
-        { "label": "Monkey Forest", "url": "https://www.youtube.com/results?search_query=Monkey+Forest+Ubud" }
+        {
+          "label": "Monkey Forest",
+          "url": "https://www.youtube.com/results?search_query=Monkey+Forest+Ubud"
+        }
+      ],
+      "photos": [
+        "https://picsum.photos/seed/ubud1/1200/900",
+        "https://picsum.photos/seed/ubud2/1200/900"
       ]
     }
   ]
 }
-
