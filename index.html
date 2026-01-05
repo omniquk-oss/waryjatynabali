@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Plan wycieczek – Bali</title>
+  <style>
+    :root { --max: 1100px; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; background:#f6f7f9; color:#111; }
+    header { background:#fff; border-bottom:1px solid #e6e6e6; position: sticky; top:0; z-index: 10; }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 16px; }
+    h1 { margin: 0; font-size: 20px; }
+    .sub { margin: 6px 0 0; color:#555; font-size: 13px; }
+    .controls { display:flex; gap:10px; align-items:center; flex-wrap: wrap; margin-top: 12px; }
+    input[type="search"]{ padding:10px 12px; border:1px solid #ddd; border-radius:10px; width:min(520px, 100%); background:#fff; }
+    .tabs { display:flex; gap:8px; }
+    .tab { padding:10px 12px; border-radius:999px; border:1px solid #ddd; background:#fff; cursor:pointer; font-size: 13px; }
+    .tab.active { background:#111; color:#fff; border-color:#111; }
+    main { padding: 18px 0 40px; }
+    .grid { display:grid; grid-template-columns: repeat( auto-fit, minmax(260px, 1fr) ); gap:14px; }
+    .card { background:#fff; border:1px solid #e8e8e8; border-radius:16px; overflow:hidden; box-shadow: 0 1px 0 rgba(0,0,0,.03); }
+    .thumb { width:100%; aspect-ratio: 16/9; object-fit: cover; background:#eee; display:block; }
+    .content { padding: 12px; }
+    .badge { display:inline-block; font-size: 12px; padding: 4px 8px; border-radius: 999px; background:#f0f0f0; margin-bottom: 8px; }
+    .title { margin: 0 0 8px; font-size: 16px; line-height: 1.2; }
+    .places { margin: 0 0 10px; padding-left: 18px; color:#333; font-size: 13px; }
+    .links { display:flex; gap:8px; flex-wrap: wrap; }
+    .btn { display:inline-block; text-decoration:none; font-size: 13px; padding: 8px 10px; border-radius: 10px; border:1px solid #ddd; color:#111; background:#fff; }
+    .btn.primary { background:#111; color:#fff; border-color:#111; }
+    .muted { color:#666; font-size: 13px; }
+    footer { color:#777; font-size: 12px; padding: 24px 16px; }
+    .error { background:#fff3f3; border:1px solid #ffd1d1; color:#8b0000; padding: 12px; border-radius: 12px; }
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Plan wycieczek – Bali</h1>
+    <div class="sub">Dwie kategorie: całodniowe i kilkugodzinne. Wyszukaj po nazwie lub miejscach.</div>
+
+    <div class="controls">
+      <div class="tabs" role="tablist" aria-label="Kategorie">
+        <button class="tab active" data-filter="all" role="tab">Wszystko</button>
+        <button class="tab" data-filter="full" role="tab">Całodniowe</button>
+        <button class="tab" data-filter="short" role="tab">Kilkugodzinne</button>
+      </div>
+      <input id="q" type="search" placeholder="Szukaj: np. Uluwatu, wodospad, Nusa Penida…" />
+      <span id="count" class="muted"></span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div id="status" class="muted">Wczytuję wycieczki…</div>
+  <div id="grid" class="grid" style="margin-top:14px;"></div>
+</main>
+
+<footer class="wrap">
+  Edycja treści: zmień plik <b>trips.json</b> (dodaj/usuń obiekty) i odśwież stronę.
+</footer>
+
+<script>
+  const elGrid = document.getElementById('grid');
+  const elStatus = document.getElementById('status');
+  const elQ = document.getElementById('q');
+  const elCount = document.getElementById('count');
+  const tabs = Array.from(document.querySelectorAll('.tab'));
+
+  let allTrips = [];
+  let activeFilter = 'all';
+
+  function normalize(s) {
+    return (s || '').toString().toLowerCase()
+      .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  }
+
+  function matches(trip, q) {
+    if (!q) return true;
+    const hay = [
+      trip.title,
+      trip.categoryLabel,
+      ...(trip.places || []),
+    ].join(' ');
+    return normalize(hay).includes(normalize(q));
+  }
+
+  function card(trip) {
+    const badge = trip.category === 'full' ? 'Całodniowa' : 'Kilkugodzinna';
+    const img = trip.image || '';
+    const places = (trip.places || []).map(p => `<li>${escapeHtml(p)}</li>`).join('');
+    const links = (trip.youtube || []).map(u => `
+      <a class="btn" href="${escapeAttr(u.url)}" target="_blank" rel="noopener">
+        ▶ ${escapeHtml(u.label || 'YouTube')}
+      </a>
+    `).join('');
+
+    const mapsLink = trip.mapsUrl ? `
+      <a class="btn primary" href="${escapeAttr(trip.mapsUrl)}" target="_blank" rel="noopener">Mapa</a>
+    ` : '';
+
+    return `
+      <article class="card">
+        ${img ? `<img class="thumb" src="${escapeAttr(img)}" alt="${escapeAttr(trip.title)}" loading="lazy">` : `<div class="thumb"></div>`}
+        <div class="content">
+          <div class="badge">${badge}</div>
+          <h3 class="title">${escapeHtml(trip.title)}</h3>
+          ${places ? `<ul class="places">${places}</ul>` : ''}
+          <div class="links">
+            ${mapsLink}
+            ${links}
+          </div>
+        </div>
+      </article>
+    `;
+  }
+
+  function escapeHtml(s) {
+    return (s ?? '').toString().replace(/[&<>"']/g, m => ({
+      '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
+    }[m]));
+  }
+  function escapeAttr(s){ return escapeHtml(s); }
+
+  function render() {
+    const q = elQ.value.trim();
+    const filtered = allTrips
+      .filter(t => activeFilter === 'all' ? true : t.category === activeFilter)
+      .filter(t => matches(t, q));
+
+    elGrid.innerHTML = filtered.map(card).join('');
+    elCount.textContent = `Wycieczki: ${filtered.length}/${allTrips.length}`;
+    elStatus.textContent = filtered.length ? '' : 'Brak wyników.';
+  }
+
+  tabs.forEach(btn => {
+    btn.addEventListener('click', () => {
+      tabs.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeFilter = btn.dataset.filter;
+      render();
+    });
+  });
+
+  elQ.addEventListener('input', render);
+
+  async function init() {
+    try {
+      const res = await fetch('trips.json', { cache: 'no-store' });
+      if (!res.ok) throw new Error('Nie mogę wczytać trips.json');
+      const data = await res.json();
+
+      // Oczekiwany format: { "trips": [ ... ] }
+      allTrips = (data.trips || []).map(t => ({
+        ...t,
+        categoryLabel: t.category === 'full' ? 'Całodniowa' : 'Kilkugodzinna',
+      }));
+
+      elStatus.textContent = '';
+      render();
+    } catch (e) {
+      elStatus.innerHTML = `<div class="error"><b>Błąd:</b> ${escapeHtml(e.message)}<br/>Upewnij się, że obok index.html jest plik trips.json.</div>`;
+    }
+  }
+
+  init();
+</script>
+</body>
+</html>

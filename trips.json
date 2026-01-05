@@ -1,0 +1,26 @@
+{
+  "trips": [
+    {
+      "id": "full-001",
+      "category": "full",
+      "title": "Uluwatu + Kecak Dance + plaże",
+      "places": ["Uluwatu Temple", "Kecak Dance", "Padang Padang Beach"],
+      "image": "https://picsum.photos/seed/uluwatu/1200/675",
+      "mapsUrl": "https://maps.app.goo.gl/qz4Zg1gB3DfvDuqs9",
+      "youtube": [
+        { "label": "Kecak Dance", "url": "https://www.youtube.com/watch?v=2hJEAySptME" }
+      ]
+    },
+    {
+      "id": "short-001",
+      "category": "short",
+      "title": "Monkey Forest + Ubud spacer",
+      "places": ["Sacred Monkey Forest Sanctuary", "Ubud Center"],
+      "image": "https://picsum.photos/seed/ubud/1200/675",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Sacred+Monkey+Forest+Sanctuary",
+      "youtube": [
+        { "label": "Monkey Forest", "url": "https://www.youtube.com/results?search_query=Monkey+Forest+Ubud" }
+      ]
+    }
+  ]
+}
