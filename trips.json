@@ -3,7 +3,7 @@
     {
       "id": "full-001",
       "category": "full",
-      "title": "Uluwatu + Kecak Dance + plaże",
+      "title": "tylko testuje",
       "places": ["Uluwatu Temple", "Kecak Dance", "Padang Padang Beach"],
       "image": "https://picsum.photos/seed/uluwatu/1200/675",
       "mapsUrl": "https://maps.app.goo.gl/qz4Zg1gB3DfvDuqs9",
@@ -24,3 +24,4 @@
     }
   ]
 }
+
