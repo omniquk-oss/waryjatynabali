@@ -2,14 +2,13 @@
   "trips": [
     {
       "id": "full-001",
-      "category": "full",
+      "category": "short",
       "title": "Uluwatu + Kecak Dance",
       "places": [
         "Uluwatu Temple",
-        "Kecak Dance",
+        "Kecak Dance - pokazy są wieczorem",
         "można opcjonalnie dodać Padang Padang Beach"
       ],
-      "image": "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/11/f9/fe/57.jpg",
       "maps": [
         {
           "label": "Uluwatu Temple",
@@ -43,37 +42,232 @@
           "url": "https://cdn.sanity.io/images/nxpteyfv/goguides/c37c2b2c2ea67bba23c551f9f5e28ce5884799fd-1600x1066.jpg",
           "caption": "Padang Padang Beach"
         }
-      ]
+      ],
+      "image": "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/11/f9/fe/57.jpg"
     },
     {
-      "id": "short-001",
-      "category": "short",
-      "title": "Monkey Forest + Ubud spacer",
+      "id": "full-ponoc-bali-wanagiri-hidden-hill-banyumala-ulun-danu-bratan-jatiluwih",
+      "category": "full",
+      "title": "Północ Bali: Wanagiri Hidden Hill + Banyumala + Ulun Danu Bratan + Jatiluwih",
       "places": [
-        "Sacred Monkey Forest Sanctuary",
-        "Ubud Center"
+        "Wanagiri Hidden Hill - UWAGA TŁUM !!!",
+        "Wodospad Banyumala",
+        "Świątynia Ulun Danu Bratan",
+        "Pola ryżowe Jatiluwih"
       ],
-      "image": "https://picsum.photos/seed/ubud/1200/675",
       "maps": [
         {
-          "label": "Sacred Monkey Forest Sanctuary",
-          "url": "https://www.google.com/maps/search/?api=1&query=Sacred+Monkey+Forest+Sanctuary"
+          "label": "Wanagiri Hidden Hill",
+          "url": "https://maps.app.goo.gl/RtiKKGfrbJpkiHpa8"
         },
         {
-          "label": "Ubud Center",
-          "url": "https://www.google.com/maps/search/?api=1&query=Ubud+Center"
+          "label": "Banyumala",
+          "url": "https://maps.app.goo.gl/DiDmwDt6QZGFVU4Q9"
+        },
+        {
+          "label": "Ulun Danu Bratan",
+          "url": "https://maps.app.goo.gl/23P8pXc2CGfvBmgj9"
+        },
+        {
+          "label": "Jatiluwih",
+          "url": "https://maps.app.goo.gl/DeAXkbc7Pajt5wCcA"
         }
       ],
       "youtube": [
         {
-          "label": "Monkey Forest",
-          "url": "https://www.youtube.com/results?search_query=Monkey+Forest+Ubud"
+          "label": "Wanagiri Hidden Hill",
+          "url": "https://www.youtube.com/results?search_query=Wanagiri+Hidden+Hill+Bali"
+        },
+        {
+          "label": "Banyumala",
+          "url": "https://www.youtube.com/results?search_query=Banyumala"
+        },
+        {
+          "label": "Ulun Danu Bratan",
+          "url": "https://www.youtube.com/results?search_query=Ulun+Danu+Bratan"
+        },
+        {
+          "label": "Jatiluwih",
+          "url": "https://www.youtube.com/results?search_query=Jatiluwih"
         }
       ],
       "photos": [
-        "https://picsum.photos/seed/ubud1/1200/900",
-        "https://picsum.photos/seed/ubud2/1200/900"
-      ]
+        {
+          "url": "https://suvarnaarora.com/wp-content/uploads/2020/05/wanagiri-hidden-hills-hand-installation-571x800.jpg",
+          "caption": "Wanagiri Hidden Hill"
+        },
+        {
+          "url": "https://aws-tiqets-cdn.imgix.net/images/content/6e60bf35745f4f9f99f50013f83f287e.jpeg?auto=format%2Ccompress&fit=crop&q=70",
+          "caption": "Banyumala"
+        },
+        {
+          "url": "https://discoveryourindonesia.com/wp-content/uploads/2015/11/Ulun-Danu-temple.jpg",
+          "caption": "Ulun Danu Bratan"
+        },
+        {
+          "url": "https://fokibalitours.com/wp-content/uploads/2025/06/jati-luwih.webp",
+          "caption": "Jatiluwih"
+        }
+      ],
+      "image": "https://www.baliholidaysecrets.com/wp-content/uploads/2025/04/Ulun-Danu-Beratan-Temple-Location-and-Entrance-Fee.webp"
+    },
+    {
+      "id": "full-nusa-penida-nie-jestem-pewien-czy-da-sie-wszystko-w-jeden-dzien",
+      "category": "full",
+      "title": "Nusa Penida - nie jestem pewien czy da się wszystko w jeden dzień",
+      "places": [
+        "Atuh Beach",
+        "Diamond Beach",
+        "Tree House - zapewne dziki tłum",
+        "Kelingking Beach",
+        "Broken Beach"
+      ],
+      "maps": [
+        {
+          "label": "Atuh Beach",
+          "url": "https://maps.app.goo.gl/Y31gBk881nqgYVsZ7"
+        },
+        {
+          "label": "Diamond Beach",
+          "url": "https://maps.app.goo.gl/caGNCvcpMkZpHt1s8"
+        },
+        {
+          "label": "Tree House",
+          "url": "https://maps.app.goo.gl/PCbGcmGpoarLKzRX9"
+        },
+        {
+          "label": "Kelingking Beach",
+          "url": "https://maps.app.goo.gl/3z8PaTtnSm2mL9b18"
+        },
+        {
+          "label": "Broken Beach",
+          "url": "https://maps.app.goo.gl/WiE1uJexoK66H5wy5"
+        }
+      ],
+      "youtube": [
+        {
+          "label": "Atuh Beach",
+          "url": "https://www.youtube.com/results?search_query=atuh+beach+nusa+penida"
+        },
+        {
+          "label": "Diamond Beach",
+          "url": "https://www.youtube.com/results?search_query=diamond+beach+nusa+penida"
+        },
+        {
+          "label": "Tree House",
+          "url": "https://www.youtube.com/results?search_query=tree+house+nusa+penida"
+        },
+        {
+          "label": "Kelingking Beach",
+          "url": "https://www.youtube.com/results?search_query=kelingking+beach"
+        },
+        {
+          "label": "Broken Beach",
+          "url": "https://www.youtube.com/results?search_query=broken+beach+nusa+penida"
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://www.journeyera.com/wp-content/uploads/2018/03/atuh-beach-nusa-penida-03947.jpg",
+          "caption": "Atuh Beach"
+        },
+        {
+          "url": "https://neptunescubadiving.blob.core.windows.net/siteimages/Diamond-Beach-Nusa-Penida.webp",
+          "caption": "Diamond Beach"
+        },
+        {
+          "url": "https://shewandersabroad.com/wp-content/uploads/2025/01/Rumah-Pohon-Tree-House-Nusa-Penida-11.jpg",
+          "caption": "Tree House"
+        },
+        {
+          "url": "https://finnsbeachclub.com/wp-content/uploads/2024/03/aerial-view-at-sea-and-rocks-kelingking-beach-nu-2023-11-27-05-07-59-utc-1024x687.jpg",
+          "caption": "Kelingking Beach"
+        },
+        {
+          "url": "https://kierunkiswiata.pl/wp-content/uploads/2020/09/broken-beach-dron.jpg",
+          "caption": "Broken Beach"
+        }
+      ],
+      "image": "https://girleatworld.net/wp-content/uploads/2018/04/nusa-penida-kelingking-1.jpg"
+    },
+    {
+      "id": "full-ubud",
+      "category": "full",
+      "title": "Ubud",
+      "places": [
+        "Barong and Keris Dance Performance",
+        "Wodospad Tegenungan Waterfall",
+        "Tegalalang Rice Terrace - raczej tłoczno",
+        "Monkey Forest",
+        "Royal Palace"
+      ],
+      "maps": [
+        {
+          "label": "Barong and Keris Dance Performance",
+          "url": "https://maps.app.goo.gl/iReAM3CNHrKbTGuM8"
+        },
+        {
+          "label": "Tegenungan Waterfall",
+          "url": "https://maps.app.goo.gl/ZsBRtqQ5DXKyqUPp6"
+        },
+        {
+          "label": "Tegalalang Rice Terrace",
+          "url": "https://maps.app.goo.gl/4VN8jzxN6ZywQyD1A"
+        },
+        {
+          "label": "Monkey Forest",
+          "url": "https://maps.app.goo.gl/Dj4pB4c4eAH7draA9"
+        },
+        {
+          "label": "Royal Palace",
+          "url": "https://maps.app.goo.gl/tf3XSiXKxMPybsSFA"
+        }
+      ],
+      "youtube": [
+        {
+          "label": "Barong and Keris Dance Performance",
+          "url": "https://www.youtube.com/results?search_query=barong+and+keris+dance+performance"
+        },
+        {
+          "label": "Tegenungan Waterfall",
+          "url": "https://www.youtube.com/results?search_query=Tegenungan+Waterfall"
+        },
+        {
+          "label": "Tegalalang Rice Terrace",
+          "url": "https://www.youtube.com/results?search_query=tegalalang+rice+terrace+bali"
+        },
+        {
+          "label": "Monkey Forest",
+          "url": "https://www.youtube.com/results?search_query=monkey+forest+ubud"
+        },
+        {
+          "label": "Royal Palace",
+          "url": "https://www.youtube.com/results?search_query=Ubud+Royal+Palace"
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://cdn.travel-buddies.com/media/ubud-barong-and-keris-dance-batuan-temple-and-waterfall-t834712-1.jpg",
+          "caption": "Barong and Keris Dance Performance"
+        },
+        {
+          "url": "https://baliexotictrip.com/wp-content/uploads/2025/05/491223153_1229243982543066_6783562855347028318_n-1290x737.jpg",
+          "caption": "Tegenungan Waterfall"
+        },
+        {
+          "url": "https://roadtripsandsuitcases.com/wp-content/uploads/2025/03/DSC_2816_7_8_Optimizer_edited_edited.jpg",
+          "caption": "Tegalalang Rice Terrace"
+        },
+        {
+          "url": "https://www.pelago.com/img/products/ID-Indonesia/ubud-skip-the-line-monkey-forest-sanctuary-ticket-and-guided-tour/b62dece3-6d8d-48db-a3a7-aa3f80933af7_ubud-skip-the-line-monkey-forest-sanctuary-ticket-and-guided-tour-xlarge.webp",
+          "caption": "Monkey Forest"
+        },
+        {
+          "url": "https://abisenaubud.com/wp-content/uploads/2025/06/unnamed-2.png",
+          "caption": "Royal Palace"
+        }
+      ],
+      "image": "https://baliexception.com/wp-content/uploads/2025/01/stone-bridge.jpg"
     }
   ]
 }
