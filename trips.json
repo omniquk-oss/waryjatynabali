@@ -199,7 +199,8 @@
         "Wodospad Tegenungan Waterfall",
         "Tegalalang Rice Terrace - raczej tłoczno",
         "Monkey Forest",
-        "Royal Palace"
+        "Royal Palace",
+        "Tirta Empul Temple"
       ],
       "maps": [
         {
@@ -221,6 +222,10 @@
         {
           "label": "Royal Palace",
           "url": "https://maps.app.goo.gl/tf3XSiXKxMPybsSFA"
+        },
+        {
+          "label": "Tirta Empul Temple",
+          "url": "https://maps.app.goo.gl/wcEvs17eBfBXvNJQ9"
         }
       ],
       "youtube": [
@@ -243,6 +248,10 @@
         {
           "label": "Royal Palace",
           "url": "https://www.youtube.com/results?search_query=Ubud+Royal+Palace"
+        },
+        {
+          "label": "Tirta Empul Temple",
+          "url": "https://www.youtube.com/results?search_query=tirta+empul+temple+bali"
         }
       ],
       "photos": [
@@ -265,9 +274,159 @@
         {
           "url": "https://abisenaubud.com/wp-content/uploads/2025/06/unnamed-2.png",
           "caption": "Royal Palace"
+        },
+        {
+          "url": "https://balirescentre.com/wp-content/uploads/2025/05/30657abc-417a-4083-8773-0b5d65c75753.jpeg",
+          "caption": "Tirta Empul Temple"
         }
       ],
       "image": "https://baliexception.com/wp-content/uploads/2025/01/stone-bridge.jpg"
+    },
+    {
+      "id": "full-tirta-gangga-water-palace-tukad-cepung-waterfall",
+      "category": "full",
+      "title": "Tirta Gangga Water Palace + Tukad Cepung Waterfall",
+      "places": [
+        "Tukad Cepung Waterfall",
+        "Tirta Gangga Water Palace"
+      ],
+      "maps": [
+        {
+          "label": "Tukad Cepung Waterfall",
+          "url": "https://maps.app.goo.gl/BDkAUxHgZoiWNcPZ8"
+        },
+        {
+          "label": "Tirta Gangga Water Palace",
+          "url": "https://maps.app.goo.gl/fEhYAdV5TDvFSJKx8"
+        }
+      ],
+      "youtube": [
+        {
+          "label": "Tukad Cepung Waterfall",
+          "url": "https://www.youtube.com/results?search_query=Tukad+Cepung+Waterfall"
+        },
+        {
+          "label": "Tirta Gangga Water Palace",
+          "url": "https://www.youtube.com/results?search_query=tirta+gangga+water+palace+bali"
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://www.travelersuniverse.com/wp-content/uploads/2025/05/1_bali-waterfalls-in-one-day-tukad-cepung-2-hidden-waterfall-kanto-lampo.jpg",
+          "caption": "Tukad Cepung Waterfall"
+        },
+        {
+          "url": "https://www.baliholidaysecrets.com/wp-content/uploads/2025/09/what-is-tirta-gangga-water-palace-1170x878.webp",
+          "caption": "Tirta Gangga Water Palace"
+        }
+      ],
+      "image": "https://baliuntold.com/wp-content/uploads/2023/12/Tukad-Cepung-Waterfall-Cover.jpg"
+    },
+    {
+      "id": "full-goa-gajah-temple-besakih-temple-bukit-jambul-rice-terrace-kerta-gosa-ancient-justice-court-palace",
+      "category": "full",
+      "title": "Goa Gajah Temple + Besakih Temple + Bukit Jambul Rice Terrace + Kerta Gosa Ancient Justice Court Palace",
+      "places": [
+        "Goa Gajah Temple",
+        "Besakih Temple - zapewne dziki tłum",
+        "Bukit Jambul Rice Terrace - bardziej przystanek niż atrakcja",
+        "Kerta Gosa Ancient Justice Court Palace"
+      ],
+      "maps": [
+        {
+          "label": "Goa Gajah Temple",
+          "url": "https://maps.app.goo.gl/wLSgqwkw7ANsDMfY6"
+        },
+        {
+          "label": "Besakih Temple",
+          "url": "https://maps.app.goo.gl/svtDtQuCi1DxJWEb8"
+        },
+        {
+          "label": "Bukit Jambul Rice Terrace",
+          "url": "https://maps.app.goo.gl/fhqMpmRM1twmoMre9"
+        },
+        {
+          "label": "Kertha Gosa",
+          "url": "https://maps.app.goo.gl/R2D2pa1kTEF463YX8"
+        }
+      ],
+      "youtube": [
+        {
+          "label": "Goa Gajah Temple",
+          "url": "https://www.youtube.com/results?search_query=Goa+Gajah+Temple"
+        },
+        {
+          "label": "Besakih Temple",
+          "url": "https://www.youtube.com/results?search_query=besakih+temple+in+bali"
+        },
+        {
+          "label": "Bukit Jambul Rice Terrace",
+          "url": "https://www.youtube.com/results?search_query=Bukit+Jambul+Rice+Terrace"
+        },
+        {
+          "label": "Kertha Gosa",
+          "url": "https://www.youtube.com/results?search_query=Kerta+Gosa+Ancient+Justice+Court+Palace"
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://balirescentre.com/wp-content/uploads/2025/05/8dc98d50-2faa-4897-a6f3-c1cbc9a4f79f.webp",
+          "caption": "Goa Gajah Temple"
+        },
+        {
+          "url": "https://inclusivebalitour.com/wp-content/uploads/2019/09/Besakih-Temple-Tour.jpg",
+          "caption": "Besakih Temple"
+        },
+        {
+          "url": "https://www.baligoldentour.com/images/bali-interest-place/bukit-jambul-rice-terrace-bali-golden-tour-1.jpg",
+          "caption": "Bukit Jambul Rice Terrace"
+        },
+        {
+          "url": "https://res.cloudinary.com/dyiffrkzh/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_center,h_400,q_auto,w_700/v1690539345/bbj/qr0r0mpcbkwfmktn1bnh.jpg",
+          "caption": "Kertha Gosa"
+        }
+      ],
+      "image": "https://baliuntold.com/wp-content/uploads/2024/02/Pura-Besakih-Temple-Bali.jpg"
+    },
+    {
+      "id": "short-taman-ayun-temple-tanah-lot-temple",
+      "category": "short",
+      "title": "Taman Ayun Temple + Tanah Lot Temple",
+      "places": [
+        "Taman Ayun Temple",
+        "Tanah Lot Temple"
+      ],
+      "maps": [
+        {
+          "label": "Taman Ayun Temple",
+          "url": "https://maps.app.goo.gl/Pd7BBYfYtpq8RrUe7"
+        },
+        {
+          "label": "Tanah Lot Temple",
+          "url": "https://maps.app.goo.gl/HNHMv9jUcB3uDercA"
+        }
+      ],
+      "youtube": [
+        {
+          "label": "Taman Ayun Temple",
+          "url": "https://www.youtube.com/results?search_query=Taman+Ayun+Temple"
+        },
+        {
+          "label": "Tanah Lot Temple",
+          "url": "https://www.youtube.com/results?search_query=Taman+Ayun+Temple"
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://baliexpat.com/wp-content/uploads/2025/02/pura-taman-ayun.jpg",
+          "caption": "Taman Ayun Temple"
+        },
+        {
+          "url": "https://cdn.prod.website-files.com/66fab24d6dde4d79b3b50865/677fbde00bc256b79d84fcfc_TANAH%20LOT%20TEMPLE.webp",
+          "caption": "Tanah Lot Temple"
+        }
+      ],
+      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/4c/37/44/photo8jpg.jpg?w=900&h=500&s=1"
     }
   ]
 }
